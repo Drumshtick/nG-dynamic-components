@@ -1,0 +1,19 @@
+.welcome-container {
+  margin: 0 auto;
+  width: 80%;
+  div {
+    margin-top: 5%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    fa-icon {
+      font-size: 48px;
+      transition: transform 1s;
+    }
+    fa-icon:hover {
+      transform: scaleX(1.1) scaleY(1.8) scaleZ(2.0) translate3d(500px, -500px, -500px);
+    }
+  }
+}
