@@ -5,6 +5,6 @@ import { ViewContainerRef } from '@angular/core';
 })
 export class DynamicDirective {
 
-  constructor(public ViewContainerRef: ViewContainerRef) { }
+  constructor(public viewContainerRef: ViewContainerRef) { }
 
 }

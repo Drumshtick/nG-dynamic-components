@@ -9,4 +9,7 @@ import { DynamicComponent } from './dynamic.component';
 export class PawesomeComponent implements DynamicComponent {
 
   constructor() { }
+
+  ngOnInit(): void {
+  }
 }

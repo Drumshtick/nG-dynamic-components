@@ -10,4 +10,7 @@ export class SmileyComponent implements DynamicComponent {
 
   constructor() { }
 
+  ngOnInit(): void {
+  }
+
 }

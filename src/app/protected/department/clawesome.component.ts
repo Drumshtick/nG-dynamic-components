@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DynamicComponent } from './dynamic.component';
-
 @Component({
   selector: 'app-clawesome',
   templateUrl: './clawesome.component.html',
@@ -9,5 +8,8 @@ import { DynamicComponent } from './dynamic.component';
 export class ClawesomeComponent implements DynamicComponent {
 
   constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
