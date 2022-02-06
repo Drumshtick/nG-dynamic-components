@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { ProtectedRoutingModule } from './protected-routing.module';
 import { ProtectedComponent } from './protected.component';
+import { DepartmentComponent } from './department/department.component';
+import { DynamicDirective } from './department/dynamic.directive';
 
 
 @NgModule({
   declarations: [
-    ProtectedComponent
+    ProtectedComponent,
+    DepartmentComponent,
+    DynamicDirective
   ],
   imports: [
     CommonModule,
