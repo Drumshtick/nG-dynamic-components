@@ -1,0 +1,9 @@
+.dashboard { 
+  margin-top: 2rem; display: flex;  
+  main { 
+    width: 75%;
+    h2 { text-align: center; }
+    .task-list { width: 80%; margin: auto; }
+    mat-selection-list { max-width: 800px; }
+  }
+}

@@ -1,1 +1,11 @@
-<p>protected works!</p>
+<div class="dashboard">
+  <main>
+    <h2>Tasks todo</h2>
+    <mat-selection-list #todo class="task-list">
+      <mat-list-option *ngFor="let task of tasks">
+        {{ task }}
+      </mat-list-option>
+    </mat-selection-list>
+  </main>
+  <app-department></app-department>
+</div>
