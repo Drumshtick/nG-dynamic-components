@@ -8,7 +8,8 @@ import { DynamicDirective } from './department/dynamic.directive';
 import { ClawesomeComponent } from './department/clawesome.component';
 import { PawesomeComponent } from './department/pawesome.component';
 import { SmileyComponent } from './department/smiley.component';
-
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { SmileyComponent } from './department/smiley.component';
   ],
   imports: [
     CommonModule,
-    ProtectedRoutingModule
+    ProtectedRoutingModule,
+    MatCardModule,
+    MatListModule,
   ]
 })
 export class ProtectedModule { }
