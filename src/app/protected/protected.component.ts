@@ -17,6 +17,7 @@ export class ProtectedComponent implements OnInit {
     'Meeting notes',
     'Respond to notes',
     'Generate system',
+    'Cook food'
   ];
 
 }

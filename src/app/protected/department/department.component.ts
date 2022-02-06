@@ -30,7 +30,8 @@ export class DepartmentComponent implements OnInit, OnDestroy {
     clearInterval(this.interval);  
   }  
   
-  private loadComponent(): void {  
+  private loadComponent(): void {
+    // console.log(this.currentIndex)
     if (this.messages.length === 0) return;  
     this.currentIndex = (this.currentIndex + 1) % this.messages.length;  
     const message = this.messages[this.currentIndex];  
@@ -38,12 +39,14 @@ export class DepartmentComponent implements OnInit, OnDestroy {
     const viewContainerRef = this.dynamicHost.viewContainerRef;  
     viewContainerRef.clear();  
   
-    const componentRef = viewContainerRef.createComponent<DynamicComponent>(message.type);  
+    const componentRef = viewContainerRef.createComponent<DynamicComponent>(message.type);
+    // console.log(this.currentIndex)
+
   }  
   
   private rotateMessages(): void {  
     this.interval = window.setInterval(() => {  
       this.loadComponent();  
-    }, 10000);  
+    }, 2000);  
   }  
 }
