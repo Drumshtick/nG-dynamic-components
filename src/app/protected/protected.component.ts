@@ -12,4 +12,11 @@ export class ProtectedComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public tasks: string[] = [
+    'Reply to email',
+    'Meeting notes',
+    'Respond to notes',
+    'Generate system',
+  ];
+
 }
