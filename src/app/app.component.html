@@ -1,4 +1,12 @@
 <mat-toolbar color="primary" class="toolbar">
   <h1>Cookie Monsters Work App</h1>
-  
+  <div>
+    <app-profile></app-profile>
+    <app-menu></app-menu>
+  </div>
 </mat-toolbar>
+
+
+<!-- router-outlet will show the template from the root component
+In this case it is home (see app-routing) -->
+<router-outlet></router-outlet>
