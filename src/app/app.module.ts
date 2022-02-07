@@ -39,6 +39,7 @@ import { AuthButtonComponent } from './auth-button/auth-button.component';
     AuthModule.forRoot({// Info found under application settings in Auth0
       domain: 'dev-2px0rxvp.us.auth0.com',// Domain
       clientId: 'MEurl2oRnzKFTwZvJlyqh2eANs6Ar77w',// Client ID
+      redirect_uri: 'http://localhost:4200/protected'
     }),
   ],
   providers: [],
