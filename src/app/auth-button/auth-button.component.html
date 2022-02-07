@@ -1,12 +1,12 @@
 <div>
   <button
- (click)="auth.loginWithRedirect()"
- *ngIf="(auth.isAuthenticated$ | async ) === false"
->
-  Log in
+  (click)="auth.loginWithRedirect()"
+  *ngIf="(auth.isAuthenticated$ | async ) === false"
+  >
+    Log in
 </button>
-<button *ngIf="auth.isAuthenticated$ | async"  (click)="logout()">
-  Log out
-</button>
-
+<!-- *ngIf="auth.isAuthenticated$ | async"  add this to hide button -->
+  <button (click)="logout()">
+    Log out
+  </button>
 </div>
