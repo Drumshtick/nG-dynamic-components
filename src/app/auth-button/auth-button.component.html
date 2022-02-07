@@ -1,1 +1,6 @@
-<button (click)="auth.loginWithRedirect()">Log in</button>
+<button
+ (click)="auth.loginWithRedirect()"
+ *ngIf="(auth.isAuthenticated$ | async ) === false"
+>
+  Log in
+</button>
