@@ -13,4 +13,9 @@ export class AuthButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  logout(): void {
+    // Call this to log the user out of the application
+    this.auth.logout({ returnTo: window.location.origin });
+  }
 }
